@@ -7,9 +7,9 @@ Replace each team assumption with data, then change its row's `status` to `offic
 
 | Input (`assumptions.csv` key) | Data to replace it with | Where |
 |---|---|---|
-| `eligible_renters`, `avg_credit` | Census ACS 1-year PUMS household microdata (rent, income, weights) | `python -m prop13_forecast.pums` (needs `CENSUS_API_KEY`) |
-| `takeup` | Michigan homestead property tax credit claim statistics | michigan.gov/treasury |
-| `rent_growth` | Zillow Observed Rent Index (ZORI), California and Los Angeles | zillow.com/research/data |
+| `eligible_renters`, `avg_credit` | Census ACS 1-year PUMS household microdata for California renters only (rent, income, weights); HUD CHAS California state file to cross-check totals | `python -m prop13_forecast.pums` (needs `CENSUS_API_KEY`) |
+| `takeup` | California FTB statistics on renters' credit and CalEITC claims (California take-up behavior); Michigan homestead credit claims as an out-of-state comparison only | ftb.ca.gov; michigan.gov/treasury |
+| `rent_growth` | BLS CPI rent of primary residence, California metro areas (Los Angeles, San Francisco, San Diego, Riverside); Zillow ZORI for California as a check | bls.gov; FRED; zillow.com/research/data |
 | `entity_av`, `untaxed_transfer_rate` | BOE annual report statistics; Legal Entity Ownership Program filings; LA County Assessor parcel data | boe.ca.gov; data.lacounty.gov |
 | `value_gap` | LA County Assessor roll (base year vs. recent sales) | data.lacounty.gov |
 | `school_share` | Property tax allocation figures | LAO (2012); county auditor-controller allocation tables |

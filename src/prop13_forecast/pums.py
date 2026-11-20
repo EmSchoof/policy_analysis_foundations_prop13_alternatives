@@ -1,7 +1,7 @@
 """Renter's circuit breaker cost from Census ACS household microdata (PUMS).
 
 Replaces the `eligible_renters` and `avg_credit` placeholders with values computed from real
-California renter households. Needs a free Census API key in CENSUS_API_KEY
+California renter households (the query is restricted to California, state FIPS 06). Needs a free Census API key in CENSUS_API_KEY
 (https://api.census.gov/data/key_signup.html).
 
     python -m prop13_forecast.pums            # 2023 ACS 1-year, writes outputs/tables/
@@ -28,6 +28,7 @@ PUMS_URL = "https://api.census.gov/data/{year}/acs/acs1/pums"
 # GRNTP: monthly gross rent; HINCP: household income; ADJINC: income inflation adjustment
 # (x 1e-6); WGTP: household weight; TEN=3: rented; SPORDER=1: one record per household.
 FIELDS = "SERIALNO,GRNTP,HINCP,ADJINC,WGTP"
+STATE_FIPS = "06"  # California only: every household in the cost estimate is a CA renter
 
 
 def credit(annual_rent, income, income_limit, burden_threshold, credit_rate, credit_cap) -> np.ndarray:
@@ -57,7 +58,7 @@ def fetch(year: int = 2023, key: str | None = None) -> tuple[np.ndarray, np.ndar
     key = key or os.environ.get("CENSUS_API_KEY")
     if not key:
         raise RuntimeError("Set CENSUS_API_KEY (free at https://api.census.gov/data/key_signup.html)")
-    params = {"get": FIELDS, "for": "state:06", "TEN": "3", "SPORDER": "1", "key": key}
+    params = {"get": FIELDS, "for": f"state:{STATE_FIPS}", "TEN": "3", "SPORDER": "1", "key": key}
     url = PUMS_URL.format(year=year) + "?" + urllib.parse.urlencode(params)
     with urllib.request.urlopen(url, timeout=300) as r:  # noqa: S310 (fixed https host)
         rows = json.load(r)
