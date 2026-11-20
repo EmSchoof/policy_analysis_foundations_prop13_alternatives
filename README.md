@@ -52,8 +52,6 @@ Political and legal feasibility (vote thresholds, opposition) are assessed in th
 
 ## Method
 
-Built on the design of the team's Connecting Ontario forecast model:
-
 - **Every input is a range with a source.** `data/assumptions/assumptions.csv` gives each input a low,
   likely and high value, a status (`official`, `design` or `assumption`) and a source.
 - **Ranges, not a single answer.** 20,000 simulations draw all inputs at once; results are reported as
@@ -106,8 +104,3 @@ tests/             formula and data checks
 docs/methods.md    formulas and what is not modeled
 docs/sources.md    data to replace each placeholder
 ```
-
-## Acknowledgments
-
-Model design adapted from the team's Connecting Ontario forecast (Sunstone Economic Development
-Challenge, USC Price). Claude (Anthropic, 2026) assisted with source research and code.
