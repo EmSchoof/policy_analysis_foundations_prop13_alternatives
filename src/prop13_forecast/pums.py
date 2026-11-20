@@ -1,8 +1,8 @@
 """Renter's circuit breaker cost from Census ACS household microdata (PUMS).
 
 Replaces the `eligible_renters` and `avg_credit` placeholders with values computed from real
-California renter households (the query is restricted to California, state FIPS 06). Needs a free Census API key in CENSUS_API_KEY
-(https://api.census.gov/data/key_signup.html).
+California renter households only (the query is restricted to state FIPS 06). Needs a free
+Census API key in CENSUS_API_KEY (https://api.census.gov/data/key_signup.html).
 
     python -m prop13_forecast.pums            # 2023 ACS 1-year, writes outputs/tables/
 

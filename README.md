@@ -54,6 +54,8 @@ Political and legal feasibility (vote thresholds, opposition) are assessed in th
 
 ## Method
 
+- **California data only.** Every dataset is restricted to California (state, county or city level);
+  no national or out-of-state data feeds the model.
 - **Every input is a range with a source.** `data/assumptions/assumptions.csv` gives each input a low,
   likely and high value, a status (`official`, `design` or `assumption`) and a source.
 - **Ranges, not a single answer.** 20,000 simulations draw all inputs at once; results are reported as

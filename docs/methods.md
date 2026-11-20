@@ -42,7 +42,7 @@ state cost_t         = eligible households x take-up x average credit x (1 + rea
 ```
 
 `python -m prop13_forecast.pums` computes eligible households and the average credit from
-Census ACS household microdata, replacing the placeholders.
+California ACS household microdata, replacing the placeholders.
 
 ### A4 Housing growth allocation
 
