@@ -38,7 +38,7 @@ The status quo is the baseline: every projection is what an alternative **adds**
 | A1 | Status quo (baseline) | Prop 13, the 50% control rule and the current renters' credit remain unchanged |
 | A2 | Proportional reassessment of company-owned property | When X% of a company's ownership changes hands, X% of its property is reassessed |
 | A3 | Renter's circuit breaker | A refundable credit for the share of rent above a set portion of income, modeled on Michigan's program |
-| A4 | Housing growth allocation | Cities receive an extra 0.1% of each new home's assessed value for 10 years, modeled on the 2004 VLF swap |
+| A4 | Housing growth allocation | Cities receive an extra 0.1% of each new home's assessed value for 10 years, modeled on the 2004 vehicle license fee (VLF) swap |
 | A5 | A2 + A3 as linked bills | The circuit breaker, capped at the state's savings from reassessment (candidate recommendation) |
 
 ## How projections map to the criteria
@@ -46,7 +46,7 @@ The status quo is the baseline: every projection is what an alternative **adds**
 | Criterion | What the model projects |
 |---|---|
 | Effectiveness | New local property tax (A2); households helped (A3); City of Los Angeles revenue (A4) |
-| Feasibility (fiscal) | State cost (A3, A4); state Prop 98 savings (A2); share of the credit the savings cap can fund (A5) |
+| Feasibility (fiscal) | State cost (A3, A4); state Proposition 98 (Prop 98) school-funding savings (A2); share of the credit the savings cap can fund (A5) |
 | Equity | Relief reaching rent-burdened renters (A3, A5) |
 | Cost-effectiveness | Relief or revenue per public dollar (from the projected costs and revenues) |
 

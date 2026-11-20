@@ -29,8 +29,11 @@ new local property tax_t = 1% x sum of all past cohorts of added taxable value
 state savings_t          = new local property tax_t x school share x Prop 98 offset
 ```
 
+Proposition 98 (Prop 98) is California's minimum funding guarantee for K-14 schools; the offset is the
+share of new school property tax that lowers the state's required General Fund spending.
+
 The pool of not-yet-reassessed value shrinks as it turns over, so annual additions decline while
-revenue accumulates. Calibration check: the BOE estimated about $26 million a year for SB 259's
+revenue accumulates. Calibration check: the California State Board of Equalization (BOE) estimated about $26 million a year for SB 259's
 narrower 90% rule (California State Senate Committee on Appropriations, 2016). A proportional
 rule should exceed that.
 
@@ -42,7 +45,7 @@ state cost_t         = eligible households x take-up x average credit x (1 + rea
 ```
 
 `python -m prop13_forecast.pums` computes eligible households and the average credit from
-California ACS household microdata, replacing the placeholders.
+California American Community Survey (ACS) household microdata, replacing the placeholders.
 
 ### A4 Housing growth allocation
 
@@ -68,4 +71,4 @@ to stay budget-neutral.
 - Deals restructured to avoid A2 (lowers A2 revenue).
 - Landlords raising rents to capture part of the A3 credit (lowers A3's benefit to renters).
 - Any added housing supply from A4 beyond the homes assumed to be completed (the main
-  uncertainty about A4's effectiveness; the LAO (2016) found limited evidence it changes zoning).
+  uncertainty about A4's effectiveness; the Legislative Analyst's Office (LAO) (2016) found limited evidence it changes zoning).
