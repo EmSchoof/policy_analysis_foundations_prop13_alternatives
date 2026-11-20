@@ -17,10 +17,9 @@ dist/
 .env
 .env.*
 
-# --- Generated data (rebuildable) ----------------------------------------
+# --- Generated data and results (rebuildable; not committed) ------------
 data/raw/
+outputs/
 
 # Tracked on purpose:
 #   data/assumptions/   model inputs (each with a source and status)
-#   outputs/tables/     every reported number as CSV
-#   outputs/charts/     deliverable charts
