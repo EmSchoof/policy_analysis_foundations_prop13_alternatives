@@ -3,9 +3,11 @@
 **PPD 554: Foundations of Policy Analysis, Group 3: Economic Opportunity, Taxes, and Social Welfare**
 USC Price School of Public Policy, Fall 2026
 
-This repository supports the group's policy analysis memo. It projects the outcomes of each policy
-alternative against the memo's four criteria, so the analysis can compare alternatives, name the key
-tradeoff, and support a recommendation.
+**Group Policy Analysis Project.** This repository supports the group's policy analysis memo. It
+projects the outcomes of each policy alternative against the memo's four criteria, so the analysis can
+compare alternatives, name the key tradeoff, and support a recommendation.
+
+**Issue Brief presentation:** [initial slides (Canva)](https://canva.link/sfztdnf0obzkedc)
 
 ## The assignment
 
