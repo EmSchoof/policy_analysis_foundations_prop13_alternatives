@@ -1170,7 +1170,7 @@ wheels = [
 ]
 
 [[package]]
-name = "prop13-forecast"
+name = "policy-analysis-foundations-prop13-alternatives"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
