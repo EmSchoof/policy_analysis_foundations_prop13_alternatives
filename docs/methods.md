@@ -2,7 +2,7 @@
 
 [← README](../README.md) · [Sources →](sources.md)
 
-## Approach (carried over from the Ontario model)
+## Approach
 
 - **Status quo is the baseline.** Every number the model reports is what an alternative *adds*
   to the status quo, so the status quo itself is zero by construction.

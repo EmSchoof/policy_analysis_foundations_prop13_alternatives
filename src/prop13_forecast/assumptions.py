@@ -1,6 +1,6 @@
 """Model inputs: one triangular (low, mode, high) range per row, each with a status and source.
 
-Same contract as the Ontario model: status is `official` (a published figure), `design`
+Each input has a status: `official` (a published figure), `design`
 (a choice in the proposal) or `assumption` (a team placeholder to be replaced with data).
 """
 
